@@ -1,0 +1,35 @@
+{
+  "name": "gallery",
+  "version": "1.0.1",
+  "description": "Gallery Materialize Theme",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "hammerjs": "^2.0.4",
+    "jquery": "^2.1.4",
+    "node-archiver": "^0.2.0",
+    "nodemailer": "^6.7.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.0",
+    "jquery": "^2.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan Chang",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alecvipa/sieteLunas.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alecvipa/sieteLunas/issues"
+  },
+  "homepage": "https://github.com/alecvipa/sieteLunas#readme"
+}
