@@ -1,0 +1,105 @@
+nav {
+    background-color: white !important ;
+    
+}
+.navItems{
+    color: black !important;
+}
+.imageInicio{
+    height: 46rem;
+    background-image: url("/assets/images/bannerInicio.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3%;
+}
+
+nav ul a,
+nav .brand-logo {
+   color: #444;
+}
+.centered{
+   text-align: center;
+}
+.boldL{
+   font-weight: bold;
+}
+ 
+p {
+   line-height: 2rem;
+}
+ 
+.sidenav-trigger {
+   color: #26a69a;
+}
+ 
+.parallax-container {
+   min-height: 380px;
+   line-height: 0;
+   height: auto;
+   color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+     width: 100%;
+}
+.imageLogo{
+   height: 7rem;
+}
+.navDiv{
+   height: 8rem;
+}
+.sidenav-overlay{
+    display: none !important;
+}
+
+
+@media only screen and (min-width : 992px) {
+    .navUl{
+        padding-top: 3%;
+    }
+}
+@media only screen and (max-width : 992px) {
+    .imageInicio{
+        height: 41rem;
+    }
+    .parallax-container .section {
+      position: absolute;
+      top: 40%;
+    }
+    #index-banner .section {
+      top: 10%;
+    }
+    .headerBanner1{
+      margin-top: -15%;
+    }
+    .titleEspecialistas, .titleServicios{
+      font-size: 3rem;
+    }
+    .divServicios2{
+      height: 10rem;
+    }
+    .carrru{
+      margin-top: -30% !important;
+      margin-bottom: -20% !important;
+    }
+    .avisoPrivacidadTitle{
+      font-size: 1.5rem !important;
+    }
+}
+  
+@media only screen and (max-width : 600px) {
+    #index-banner .section {
+      top: 0;
+    }
+}
+  
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+  
+footer.page-footer {
+    margin: 0;
+}
