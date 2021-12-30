@@ -19,6 +19,24 @@ nav {
     font-family: 'Nunito Sans', sans-serif;
     font-family: 'Work Sans', sans-seri
 }
+.footerMezcal{
+    background-color: #ADAC73 !important;
+}
+.contInicioNosotros{
+    background-color: white;
+    padding-top: 3%;
+    margin-top: 3%;
+}
+.overlayParallax{
+    background-color: rgba(0, 0, 0, 0.411);
+    height: 100%;
+    width: 100%;
+    padding-top: 10%;
+}
+.containerParallax{
+    height: 20rem !important;
+}
+
 
 nav ul a,
 nav .brand-logo {
@@ -65,6 +83,13 @@ p {
     }
 }
 @media only screen and (max-width : 992px) {
+    .overlayParallax{
+        padding-top: 20%;
+    }
+    .containerParallax{
+        height: 15rem !important;
+    }
+    
     .imageInicio{
         height: 41rem;
     }
