@@ -111,6 +111,9 @@ p {
     }
 }
 @media only screen and (max-width : 992px) {
+    .gallery-bodies{
+        margin-top: 320px !important;
+    }
     .titleSiguenos{
         font-size: 25px;
     }
