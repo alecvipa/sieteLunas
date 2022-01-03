@@ -13,6 +13,24 @@ nav {
     background-size: cover;
     margin-bottom: 3%;
 }
+.bannerPrivacidad{
+    background-image: url("/assets/images/sal.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.overlayPrivacidad{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+.privacidadDiv{
+    margin-bottom: 0%;
+}
+.avisoDiv{
+    padding-top: 3%;
+}
 .centered{
     text-align: center !important;
 }
