@@ -13,6 +13,9 @@ nav {
     background-size: cover;
     margin-bottom: 3%;
 }
+.centered{
+    text-align: center !important;
+}
 .fonts{
     font-family: 'Inter', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
@@ -36,7 +39,14 @@ nav {
 .containerParallax{
     height: 20rem !important;
 }
+.instaOption:hover{
+    opacity: .5;
+    transition: 0.5s;
+}
 
+.colorSieteTeal{
+    color: #73B598 !important;
+}
 
 nav ul a,
 nav .brand-logo {
@@ -83,6 +93,9 @@ p {
     }
 }
 @media only screen and (max-width : 992px) {
+    .titleSiguenos{
+        font-size: 25px;
+    }
     .overlayParallax{
         padding-top: 20%;
     }
