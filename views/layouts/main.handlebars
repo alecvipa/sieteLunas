@@ -35,9 +35,29 @@
             var elems = document.querySelectorAll('.sidenav');
             var instances = M.Sidenav.init(elems, options);
         });
+    </script>
+    <script>
+        function submitEmailForm(form) {
 
-
-
+            var obj = new XMLHttpRequest();
+            obj.onreadystatechange = function () {
+                if (obj.readyState == 4) {
+                    if (obj.status == 200) {
+                        var res = JSON.parse(obj.responseText);
+                        alert(res.message);
+                    }
+                    else {
+                        console.log("XMLHttp status " + obj.status + ": " + obj.statusText);
+                    }
+                }
+            };
+            obj.open("post", form.action, true);
+            obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+            obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value }));
+            alert("¡En breve te contactaremos!");
+            $(".formInput").val(" ");
+            return false;
+        }
     </script>
 </head>
 
@@ -51,20 +71,25 @@
                 <li><a href="/contacto" class="navItems">Donde comprar</a></li>
                 <li><a href="/recetas" class="navItems">Recetas</a></li>
                 <li><a href="/privacidad" class="navItems">Aviso de privacidad</a></li>
-                <li><a href="https://www.facebook.com/Mezcal-Siete-Lunas-102069484938577" class="navItems" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/mezcal_sietelunas/?hl=es" class="navItems" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/Mezcal-Siete-Lunas-102069484938577" class="navItems"
+                        target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/mezcal_sietelunas/?hl=es" class="navItems" target="_blank"><i
+                            class="fab fa-instagram"></i></a></li>
                 <li><a href="/privacidad" class="navItems"><i class="fab fa-whatsapp-square"></i></a></li>
             </ul>
 
 
             <ul id="nav-mobile" class="sidenav">
-                <li><a class="sidenav-close" href="#!"><i class="material-icons" style="color: #73B598;">menu</i></a></li>
+                <li><a class="sidenav-close" href="#!"><i class="material-icons" style="color: #73B598;">menu</i></a>
+                </li>
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/contacto" class="navItems">Donde comprar</a></li>
                 <li><a href="/recetas" class="navItems">Recetas</a></li>
                 <li><a href="/privacidad">Aviso de privacidad</a></li>
-                <li><a href="https://www.facebook.com/Mezcal-Siete-Lunas-102069484938577" class="navItems" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/mezcal_sietelunas/?hl=es" class="navItems" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/Mezcal-Siete-Lunas-102069484938577" class="navItems"
+                        target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/mezcal_sietelunas/?hl=es" class="navItems" target="_blank"><i
+                            class="fab fa-instagram"></i></a></li>
                 <li><a href="/privacidad" class="navItems"><i class="fab fa-whatsapp-square"></i></a></li>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
