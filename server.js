@@ -62,7 +62,7 @@ app.post("/ajax/email", function (request, response) {
     var htmlBody = `<h2>Correo de contacto</h2><p>Nombre: ${request.body.name} </p> <p> Correo electrónico: <a href='mailto: ${request.body.email}'>${request.body.email}</a></p><p>Mensaje:${request.body.message} </p>`;
     var mail = {
         from: '"Team: Xyncs Web Studio',
-        to: 'hebrit_626@hotmail.com',
+        to: 'ventas@mezcalsietelunas.com',
         subject: '¡Alguien ha dejado sus datos en Mezcal 7 Lunas!',
         html: htmlBody
     };
